@@ -1,0 +1,51 @@
+<div class=" text-center">
+	<h1>Contact Page</h1>
+	
+	<p>{{ message }}</p>
+</div>
+
+<div >
+        <div>
+            Country:
+            <select id="country" ng-model="statessource" ng-options="country for (country, states) in countries" ng-change="GetSelectedCountry()"
+            class="form-control">
+                <option value=''>Select</option>
+            </select>
+        </div>
+        <div style='height: 15px;'>
+            &nbsp;</div>
+        <div>
+            States:<select id="state" ng-disabled="!statessource" ng-model="citiessource" ng-options="state for (state,city) in statessource"
+                ng-change="GetSelectedState()" class="form-control"><option value=''>Select</option>
+            </select>
+        </div>
+        <div style='height: 15px;'>
+            &nbsp;</div>
+        <div>
+            City:<select id="city" ng-disabled="!citiessource || !statessource" ng-model="city"><option value=''>
+                Select</option>
+                <option ng-repeat="city in citiessource" value='{{city}}'>{{city}}</option>
+            </select>
+        </div>
+        <div style='height: 15px;'>
+            &nbsp;</div>
+        <div>
+            <span>Selected Country: </span>
+            <label>
+                {{strCountry}}</label>
+        </div>
+        <div style='height: 15px;'>
+            &nbsp;</div>
+        <div>
+            <span>Selected State: </span>
+            <label>
+                {{strState}}</label>
+        </div>
+        <div style='height: 15px;'>
+            &nbsp;</div>
+        <div>
+            <span>Selected City: </span>
+            <label>
+                {{city}}</label>
+        </div>
+    </div>
