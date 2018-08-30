@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
+:root{
+  --gunmetal:rgba(88, 88, 88, .4);
+  --gris:#585858;
+  --mint: #3DAA7F;
+  --green: #02C39A;
+  }
+
+html,body{
+   /* Workaround for some mobile browsers */
+   height:100%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+.intro{
+     height:100%;
+   width: 100%;
+   margin: auto;
+     background: url('../img/background1.png') no-repeat center center fixed;
+    background-size: cover;
+    display: table;
+    top: 0;
+}
+
+.fondo{
+    background: url('../img/background1.png') no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment:fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.intro .inner{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content{
+  max-width: 600px;
+  text-align: center;
+  padding-bottom: 20%;
+  margin: 0 auto;
+}
+
+.content h1{
+  font-family: 'Yantramanav', sans-serif;
+}
+
+footer{
+    background-color: var(--gris) !important;
+}
+
+.home-inner{
+  padding-top: 300px;
+  color: white;
+  text-align: center;
+}
+.about-inner{
+  padding-top: 100px;
+  color: white;
+  text-align: center;
+}
+
+.landing{
+      background-color: rgba(0,0,0,0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+        transition: all 1s ease;
+}
+
+.overlay{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+24,0.62+41,0.1+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 24%, rgba(0,0,0,0.62) 41%, rgba(0,0,0,0.1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 24%,rgba(0,0,0,0.62) 41%,rgba(0,0,0,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 24%,rgba(0,0,0,0.62) 41%,rgba(0,0,0,0.1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#1a000000',GradientType=0 ); /* IE6-9 */
+}
+
+
+.bg-custom{
+  background-color: var(--gris) !important;
+  transition: all 1s ease;
+}
+
+.navbar-custom{
+  background-color: var(--gunmetal) !important;
+  transition: all 1s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+}
+
+
+.sidebarimg{
+    width:400px;
+}
+
+
+/**********************/
+
+.navbar-toggler>.close {
+    display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+    display:none;
+}
+
+.close{
+    float: right;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1;
+    color: rgba(255,255,255,.7);
+    text-shadow: none;
+    opacity: 1;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,1);
+}
