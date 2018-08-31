@@ -202,7 +202,7 @@ font-family: 'IBM Plex Sans', sans-serif;
 
 @media (max-width: 575.98px) {
       .intro{
-           background-position: -100px 5px; 
+           background-position: -100px 0px; 
 
        }
       .content{
