@@ -18,14 +18,34 @@ html,body, .contenedor{
    width: 100%;
    padding: 0;
    margin: 0;
-}
 
+}
+/*.contenedor{
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}*/
+
+/*.contenedor img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  z-index: -1;
+}*/
 
 
 .intro{
-    height:100%;
-     background-image: url('../img/background2.png');
+    height:100vh;
+     background-image: url('../img/background2.png') ;
     background-size: cover;
+    max-height: 100%;
 
 }
 .intro2{
@@ -86,12 +106,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endCo
 }
 
 .degradado1{
-  height:100vh;
+
    width: 100vw;
+   max-height: 100%;
     background-size: cover;
     top: 0;
   background: rgb(13,161,152);
-background: linear-gradient(180deg, rgba(13,161,152,1) 0%, rgba(27,191,181,1) 45%, rgba(21,215,204,1) 100%);
+  background: linear-gradient(180deg, rgba(13,161,152,1) 0%, rgba(27,191,181,1) 45%, rgba(21,215,204,1) 100%) 100% 100%;
 }
 
 .content{
@@ -102,6 +123,11 @@ font-family: 'IBM Plex Sans', sans-serif;
 
 }
 
+#blogmenu .container{
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+}
 
 
 .fondo{
@@ -218,6 +244,9 @@ font-family: 'IBM Plex Sans', sans-serif;*/
       transition: all 1s ease;
 }
 
+/*.navbar{
+  z-index: 1
+}*/
 
 .bg-custom{
   background-color: var(--gris) !important;
@@ -385,3 +414,4 @@ font-family: 'IBM Plex Sans', sans-serif;*/
           border-bottom: none;
           }
 }
+
