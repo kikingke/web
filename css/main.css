@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 :root{
   --gunmetal:rgba(88, 88, 88, .4);
   --gris:#585858;
   --mint: #3DAA7F;
   --green: #02C39A;
   --verde: #1bbfb5;
+  }
+
+  h1,h2,h3{
+    font-family: 'Righteous', cursive;
   }
 
 html,body, .contenedor{
@@ -15,12 +20,12 @@ html,body, .contenedor{
    margin: 0;
 }
 
+
+
 .intro{
-    height:100vh;
-   width: 100vw;
-     background: url('../img/background2.png');
+    height:100%;
+     background-image: url('../img/background2.png');
     background-size: cover;
-    top: 0;
 
 }
 .intro2{
@@ -33,8 +38,8 @@ html,body, .contenedor{
 }
 .intro3{
     height:100vh;
-   width: 100vw;
-     background: url('../img/background3.png') no-repeat center center fixed;
+    width: 100vw;
+    background: url('../img/background3.png') no-repeat center center fixed;
     background-size: cover;
     top: 0;
 
@@ -42,6 +47,7 @@ html,body, .contenedor{
 .overlay{
   width: 100vw;
   height: 100vh;
+  background-size: cover;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+24,0.62+41,0.1+100 */
   background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 24%, rgba(0,0,0,0.6) 41%, rgba(0,0,0,0.1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 24%,rgba(0,0,0,0.6) 41%,rgba(0,0,0,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -69,13 +75,23 @@ background: linear-gradient(180deg, rgba(0,0,0,0.4514180672268907) 0%, rgba(255,
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
 }
 
+.overlay3{
+      width: 100vw;
+  height: 100vh;
+  background: rgb(0,0,0);
+background: -moz-radial-gradient(circle, rgba(0,0,0,0.1516981792717087) 0%, rgba(255,255,255,0) 100%);
+background: -webkit-radial-gradient(circle, rgba(0,0,0,0.1516981792717087) 0%, rgba(255,255,255,0) 100%);
+background: radial-gradient(circle, rgba(0,0,0,0.1516981792717087) 0%, rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+}
+
 .degradado1{
   height:100vh;
    width: 100vw;
     background-size: cover;
     top: 0;
-  background: rgb(13,112,106);
-background: linear-gradient(180deg, rgba(13,112,106,1) 0%, rgba(27,191,181,1) 45%, rgba(21,215,204,1) 100%);
+  background: rgb(13,161,152);
+background: linear-gradient(180deg, rgba(13,161,152,1) 0%, rgba(27,191,181,1) 45%, rgba(21,215,204,1) 100%);
 }
 
 .content{
@@ -98,12 +114,15 @@ font-family: 'IBM Plex Sans', sans-serif;
     padding: 0;
 }
 
-
-
+#homecontainer,
+#aboutcontainer,
+#contactcontainer{
+    padding-top: 4rem;
+}
 
 
 .home-inner{
-    padding-top: 14rem;
+
     color: white;
     text-align: right;
     max-width: 100%;
@@ -111,10 +130,10 @@ font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .home-inner h1{
-font-family: 'IBM Plex Mono', monospace;
-font-family: 'IBM Plex Sans', sans-serif;
+/*font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif;*/
   font-weight: 100;
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 70%;
   text-shadow: 0px 3px 3px #0d706a;
 
@@ -128,6 +147,22 @@ font-family: 'IBM Plex Sans', sans-serif;
     padding-right: 3rem;
 }
 
+.about-details{
+      padding-top: 2rem;
+    color: white;
+    text-align: center;
+    max-width: 100%;
+
+    width: 100%;
+}
+.about-details p{
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  line-height: 50%;
+  width: 100%;
+}
 .home-details p{
 font-family: 'IBM Plex Mono', monospace;
 font-family: 'IBM Plex Sans', sans-serif;
@@ -136,26 +171,41 @@ font-family: 'IBM Plex Sans', sans-serif;
   line-height: 50%;
 }
 .about-inner{
-  padding-top: 100px;
   color: white;
   text-align: center;
 }
-.contact-inner{
-    padding-top: 14rem;
-    color: white;
-    text-align: right;
-    max-width: 100%;
-    padding-right: 3rem;
-}
 
-.contact-inner h1{
-font-family: 'IBM Plex Mono', monospace;
-font-family: 'IBM Plex Sans', sans-serif;
+.about-inner h1{
+/*font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif;*/
   font-weight: 100;
-  font-size: 6rem;
   line-height: 70%;
   text-shadow: 0px 3px 3px #0d706a;
 
+}
+
+.contact-inner{
+    color: white;
+    text-align: center;
+    max-width: 100%;
+    padding-right: 0rem;
+}
+
+.contact-inner h1{
+/*font-family: 'IBM Plex Mono', monospace;
+font-family: 'IBM Plex Sans', sans-serif;*/
+  font-weight: 100;
+  line-height: 70%;
+  text-shadow: 0px 3px 3px #0d706a;
+
+}
+
+.contact-details p{
+      padding-top: 2rem;
+    color: white;
+    text-align: center;
+    max-width: 100%;
+    padding-right: 0rem;
 }
 
 .landing{
@@ -174,6 +224,16 @@ font-family: 'IBM Plex Sans', sans-serif;
   transition: all 1s ease;
 }
 
+.navbar-trans {
+  background: rgba(255,255,255,.14); 
+}
+
+.navbar-brand{
+  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
+   font-family: 'Righteous', cursive;
+}
+
 .navbar-custom{
   background-color: var(--gunmetal) !important;
   transition: all 1s ease;
@@ -182,6 +242,8 @@ font-family: 'IBM Plex Sans', sans-serif;
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,1);
 }
+
+
 
 
 .sidebarimg{
@@ -194,9 +256,9 @@ font-family: 'IBM Plex Sans', sans-serif;
 .navbar-toggler>.close {
     display:inline;
 }
-.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+/*.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
     display:none;
-}
+}*/
 
 .close{
     float: right;
@@ -219,12 +281,21 @@ font-family: 'IBM Plex Sans', sans-serif;
 
 @media (max-width: 575.98px) {
       .intro{
-                 background-position: -8rem 0rem; 
+           background-position: -8rem 0rem; 
 
        }
       .content{
             display: none;
        }
+       .navbar-nav .nav-link {
+          border-bottom: 1px solid #cccccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+          }
 }
 
 
@@ -244,6 +315,15 @@ font-family: 'IBM Plex Sans', sans-serif;
         font-size: 1.2rem;
         line-height: 50%;
      }
+     .navbar-nav .nav-link {
+          border-bottom: 1px solid #cccccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+          }
 }
 
 
@@ -254,7 +334,9 @@ font-family: 'IBM Plex Sans', sans-serif;
       .content{
           display: none;
        }
-}
+       .navbar-nav .nav-link {
+          border-bottom: none;
+          }
 
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -278,6 +360,9 @@ font-family: 'IBM Plex Sans', sans-serif;
      .intro{
          background-position: -80px 0px; 
      }
+     .navbar-nav .nav-link {
+          border-bottom: none;
+          }
 }
 
 
@@ -287,7 +372,7 @@ font-family: 'IBM Plex Sans', sans-serif;
  }
 
   .home-inner h1{
-        font-size: 7rem;
+        font-size: 5rem;
         line-height: 70%;
  }
 
@@ -296,4 +381,7 @@ font-family: 'IBM Plex Sans', sans-serif;
         font-size: 2rem;
         line-height: 50%;
   }
+  .navbar-nav .nav-link {
+          border-bottom: none;
+          }
 }
