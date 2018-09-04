@@ -1,15 +1,17 @@
- <div class="degradado1">
-        <div class="">
-          <div class="content" id="contactcontainer">
-            <section class="os-animation contact-inner" data-os-animation="bounceInUp" data-os-animation-delay="0s">
-                    <h1 class="display-4">Contact Page</h1>
-            </section>
-            <section class="os-animation home-details" data-os-animation="bounceInUp" data-os-animation-delay=".1s">
-                <p>{{ message }}</p>
-            </section>  
+
+    <div class="degradado1">
+        <div class="" id="contactcontainer">
+          <div class="content">
+            <div class="contact-inner">
+                <h1 class="display-3 animated  bounce delay-0s">Contactame</h1>
+
+            </div>
+            <div class="contact-details">
+                <p class="animated  bounce delay-0s">{{ message }}</p>
+            </div> 
           </div>
 
-<div >
+<div class="container">
         <div>
             Country:
             <select id="country" ng-model="statessource" ng-options="country for (country, states) in countries" ng-change="GetSelectedCountry()"
