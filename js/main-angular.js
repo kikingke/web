@@ -19,6 +19,11 @@
 			.when('/contact', {
 				templateUrl : 'views/contact.html',
 				controller  : 'contactController'
+			})
+
+			.when('/blog', {
+				templateUrl : 'views/blog.html',
+				controller  : 'blogController'
 			});
 	});
 
@@ -34,6 +39,10 @@
 
 	app.controller('contactController', function($scope) {
 		$scope.message = 'Contact us! JK. This is just a demo.';
+	});
+
+	app.controller('blogController', function($scope) {
+		$scope.message = 'Aqui comparto algunas de mis opiniones y conocimientos';
 	});
 
 	function contactController($scope) {
