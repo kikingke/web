@@ -1,5 +1,4 @@
-
-    <div class="degradado1">
+<div class="degradado1">
         <div class="" id="contactcontainer">
           <div class="content">
             <div class="contact-inner">
@@ -11,50 +10,39 @@
             </div> 
           </div>
 
-<div class="container">
-        <div>
-            Country:
-            <select id="country" ng-model="statessource" ng-options="country for (country, states) in countries" ng-change="GetSelectedCountry()"
-            class="form-control">
-                <option value=''>Select</option>
-            </select>
-        </div>
-        <div style='height: 15px;'>
-            &nbsp;</div>
-        <div>
-            States:<select id="state" ng-disabled="!statessource" ng-model="citiessource" ng-options="state for (state,city) in statessource"
-                ng-change="GetSelectedState()" class="form-control"><option value=''>Select</option>
-            </select>
-        </div>
-        <div style='height: 15px;'>
-            &nbsp;</div>
-        <div>
-            City:<select id="city" ng-disabled="!citiessource || !statessource" ng-model="city"><option value=''>
-                Select</option>
-                <option ng-repeat="city in citiessource" value='{{city}}'>{{city}}</option>
-            </select>
-        </div>
-        <div style='height: 15px;'>
-            &nbsp;</div>
-        <div>
-            <span>Selected Country: </span>
-            <label>
-                {{strCountry}}</label>
-        </div>
-        <div style='height: 15px;'>
-            &nbsp;</div>
-        <div>
-            <span>Selected State: </span>
-            <label>
-                {{strState}}</label>
-        </div>
-        <div style='height: 15px;'>
-            &nbsp;</div>
-        <div>
-            <span>Selected City: </span>
-            <label>
-                {{city}}</label>
-        </div>
-    </div>
-      </div>
-    </div>
+       </div>
+<div class="container py-3">
+    
+
+        <div class="card card-outline-secondary ">
+                        <div class="card-header">
+                            <h3 class="mb-0">Contact</h3>
+                        </div>
+                        <div class="card-body">
+                            <form class="form" role="form" autocomplete="off">
+                                <fieldset>
+                                    <label for="name2" class="mb-0">Name</label>
+                                    <div class="row mb-1">
+                                        <div class="col-lg-12">
+                                            <input type="text" name="name2" id="name2" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                    <label for="email2" class="mb-0">Email</label>
+                                    <div class="row mb-1">
+                                        <div class="col-lg-12">
+                                            <input type="text" name="email2" id="email2" class="form-control" required="">
+                                        </div>
+                                    </div>
+                                    <label for="message2" class="mb-0">Message</label>
+                                    <div class="row mb-1">
+                                        <div class="col-lg-12">
+                                            <textarea rows="6" name="message2" id="message2" class="form-control" required=""></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-secondary btn-lg float-right">Send Message</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+</div>
