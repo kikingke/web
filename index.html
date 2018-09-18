@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  ng-app="myApp">
+<html  ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,7 +13,7 @@
   <body ng-controller="mainController">
     <!-- Navigation -->
 <header class="degradado1">
-  <nav class="navbar navbar-expand-md navbar-dark navbar-trans" id="menu">
+   <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="menu">
     <div class="container">
           <a class="navbar-brand" href="#">Aburto Technologies</a>
 <!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,10 +57,7 @@
           </div>
     </div>
   </nav>
-
-  <div class="contenedor" ng-view>
-
-  </div>
+  <div class="" ng-view></div>
 </header>
 
     
@@ -72,9 +69,14 @@
 <script src="js/bootstrap.js" charset="utf-8"></script>
 <script src="js/angular.min.js" charset="utf-8"></script>
 <script src="js/angular-route.min.js" charset="utf-8"></script>
-<script src="js/main.js" charset="utf-8"></script>
-<script src="js/app.js" charset="utf-8"></script>
-<script src="js/main-angular.js" charset="utf-8"></script>
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+<script src="app/main.js" charset="utf-8"></script>
+<script src="app/app.js" charset="utf-8"></script>
+<script src="app/main-angular.js" charset="utf-8"></script>
+<script src="app/controllers.js"></script>
+<script src="app/directives.js"></script>
 <script>
       // $(window).scroll(function() {
       //   if ($("#menu").offset().top > 56) {
@@ -85,6 +87,14 @@
       //       $("#menu").removeClass("bg-custom");
       //   }
       // });
+      $(window).resize(function () {
+          var viewportWidth = $(window).width();
+          if (viewportWidth < 768) {
+                  $("#menu").removeClass("fixed-top").addClass("");
+          }else{
+                $("#menu").addClass("fixed-top");
+          }
+      });
 </script>
 
   </body>
