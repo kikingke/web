@@ -12,7 +12,7 @@
   </head>
   <body ng-controller="mainController">
     <!-- Navigation -->
-<header class="degradado1">
+<header class="deg">
    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="menu">
     <div class="container">
           <a class="navbar-brand" href="#">Aburto Technologies</a>
@@ -71,12 +71,12 @@
 <script src="js/angular-route.min.js" charset="utf-8"></script>
 <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
 <!-- AngularFire -->
-<script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+<!-- <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script> -->
 <script src="app/main.js" charset="utf-8"></script>
 <script src="app/app.js" charset="utf-8"></script>
 <script src="app/main-angular.js" charset="utf-8"></script>
 <script src="app/controllers.js"></script>
-<script src="app/directives.js"></script>
+<!-- <script src="app/directives.js"></script> -->
 <script>
       // $(window).scroll(function() {
       //   if ($("#menu").offset().top > 56) {
@@ -89,7 +89,7 @@
       // });
       $(window).resize(function () {
           var viewportWidth = $(window).width();
-          if (viewportWidth < 768) {
+          if (viewportWidth < 767.9) {
                   $("#menu").removeClass("fixed-top").addClass("");
           }else{
                 $("#menu").addClass("fixed-top");
